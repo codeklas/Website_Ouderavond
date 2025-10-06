@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over de ontwikkelaar</title>
+    <link rel="stylesheet" href="style/over_de_ontwikkelaar..css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header met navbar -->
+    <header id="main-header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo opleiding ICT" class="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over_hoornbeeck.html">Over het Hoornbeeck College</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="javascript:void(0)">Over de ouderavond</a>
+                    <ul class="dropdown-content">
+                        <li><a href="doel.html">Doel</a></li>
+                        <li><a href="organisatie.html">Organisatie</a></li>
+                        <li><a href="programma.html">Programma</a></li>
+                        <li><a href="plattengrond.html">Plattegrond</a></li>
+                    </ul>
+                </li>
+                <li><a href="verschillende ICT opleidingen.html">Verschillende opleidingen</a></li>
+                <li><a href="sfeerbeelden.html">Sfeerbeelden</a></li>
+                <li><a href="over_de_ontwikkelaar.html" class="active">Over de ontwikkelaar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero sectie -->
+    <section class="hero" style="background: linear-gradient(rgba(0,169,163,0.8), rgba(0,169,163,0.8)), url('image/developer_hero.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h2>Over de ontwikkelaar</h2>
+            <p>Kom achter wie de ontwikkelaar is van deze website.</p>
+        </div>
+    </section>
+
+    <!-- Introductie sectie -->
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Wie is de ontwikkelaar?</h2>
+            <p>
+                Mijn naam is Teun Baarssen en ik ben de ontwikkelaar van deze website. Deze website heb ik gemaakt als opdracht voor ouderavond waar we als leerling aan hun ouders moeten gaan presenteren.
+            </p>
+            <p>
+                Ik vind het belangrijk dat informatie overzichtelijk en toegankelijk is. Daarom heb ik gekozen voor een moderne, responsieve stijl die goed werkt op computers, tablets en smartphones.
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="image/afbeelding van Teun Baarssen.jpg" alt="Ontwikkelaar foto">
+        </div>
+    </section>
+
+    <!-- Motivatie sectie -->
+    <section class="why-ict">
+        <h2>Motivatie & Vaardigheden</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Passie voor ICT</h3>
+                <p>ICT heeft mij al van jongs af aan al mijn ding geweest. Ik wist toen al redelijk veel en hielp jufvrouws en meesters als iets niet wilde op hun computer en digibord. Later op de middelbare school wilde ik graag programmeur worden. Tot op de dag van vandaag is mijn droom nog steeds om programmeur te worden.</p>
+            </div>
+            <div class="reason">
+                <h3>Ervaring in webontwikkeling</h3>
+                <p>De programmeertalen die ik al (redelijk) beheerst zijn HTML en CSS. Deze talen was mijn eerste taal die ik probeerde op de middelbare school toen ik achter was gekomen dat ik dat ook leuk vond in mijn vrije tijd. Nu doe ik het al ongeveer 1,5 jaar als hobby. De laaste tijd pruts ik ook een beetje PHP voor back-end.</p>
+            </div>
+            <div class="reason">
+                <h3>Doelgericht & Creatief</h3>
+                <p>Als ik ergens meer bezig ben, doe ik dat doelgericht. Daarnaast doe ik het ook zo creatief mogelijk. Deze 2 dingen onderander zijn erg belangrijk voor een programmeur. Bij het programmeren van een website probeer ik zoveel mogelijk een overzichtelijk en creatief mogelijk website van te maken.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Hoornbeeck College, Willem Hendrik Zwartallee 1, 8265 TZ Kampen. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.getElementById("main-header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>
