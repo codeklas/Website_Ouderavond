@@ -151,15 +151,20 @@ nav ul li a.active {
     border-radius: 10px;
 }
 
-.why-ict {
-    background: #ffffff;
+.why-ict-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
     padding: 60px 10%;
+    background: #ffffff;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.why-ict h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #00a9a3;
+.why-ict {
+    flex: 2;
+    min-width: 350px;
 }
 
 .reasons {
@@ -174,11 +179,64 @@ nav ul li a.active {
     border-radius: 10px;
     text-align: center;
     border-top: 5px solid #f5ba36;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reason:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.why-ict h2 {
+    color: #00a9a3;
+    margin-bottom: 15px;
 }
 
 .reason h3 {
     color: #084887;
+    margin-bottom: 10px;
 }
+
+.sidebar-info {
+    flex: 0 0 290px;
+    background: #f5f5f5;
+    border-left: 4px solid #00a9a3;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-info h2 {
+    color: #00a9a3;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.sidebar-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.sidebar-info li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.sidebar-info i {
+    color: #f5ba36;
+    font-size: 1rem;
+}
+
 
 .timeline {
     background: #f9f9f9;
