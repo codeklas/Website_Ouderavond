@@ -158,6 +158,8 @@ nav ul li a.active {
 .plattengrond_eerste_verdieping,
 .plattengrond_tweede_verdieping {
     padding: 60px 10%;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
