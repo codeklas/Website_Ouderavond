@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plattengrond 1e verdieping</title>
+    <link rel="stylesheet" href="style/plattengrond.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo opleiding ICT" class="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="over_hoornbeeck.html">Over het Hoornbeeck College</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0)">Over de ouderavond</a>
+                <ul class="dropdown-content">
+                    <li><a href="doel.html">Doel</a></li>
+                    <li><a href="organisatie.html">Organisatie</a></li>
+                    <li><a href="programma.html">Programma</a></li>
+                    <li><a href="plattengrond.html">Plattegrond</a></li>
+                </ul>
+            </li>
+                <li><a href="verschillende ICT opleidingen.html">Verschillende opleidingen</a></li>
+                <li><a href="sfeerbeelden.html">Sfeerbeelden</a></li>
+                <li><a href="over_de_ontwikkelaar.html">Over de ontwikkelaar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Plattegrond van Hoornbeeck College Kampen</h2>
+            <p>Krijg hier inzicht hoe de school eruit ziet.</p>
+        </div>
+    </section>
+
+    <div class="plattengrond_begane_grond">
+        <img src="image/plattegrond_begane_grond.png" alt="plattengrond">
+    </div>
+
+    <div class="plattengrond_eerste_verdieping">
+        <img src="image/plattegrond_eerste_verdieping.png" alt="plattengrond">
+    </div>
+
+    <div class="plattengrond_tweede_verdieping">
+        <img src="image/plattegrond_tweede_verdieping.png" alt="plattengrond">
+    </div>
+
+        <footer>
+        <p>&copy; Hoornbeeck College, Willem Hendrik Zwartallee 1, 8265 TZ Kampen. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.getElementById("main-header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>
