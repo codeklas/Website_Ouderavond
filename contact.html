@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header met navbar -->
     <header id="main-header">
         <div class="logo-container">
             <img src="image/logo.png" alt="Logo opleiding ICT" class="logo">
@@ -34,7 +33,6 @@
         </nav>
     </header>
 
-    <!-- Hero sectie (optioneel: vervang image/contact_hero.jpg of verwijder inline style om default hero uit CSS te gebruiken) -->
     <section class="hero" style="background: linear-gradient(rgba(0,169,163,0.8), rgba(0,169,163,0.8)), url('image/contact_hero.jpg') no-repeat center center/cover;">
         <div class="hero-content">
             <h2>Contact</h2>
@@ -42,7 +40,6 @@
         </div>
     </section>
 
-    <!-- Contact sectie - gebruikt precies de .contact regels uit jouw stylesheet -->
     <section class="contact">
         <h2>Neem contact met ons op</h2>
         <form action="#" method="post">
@@ -53,13 +50,11 @@
         </form>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Hoornbeeck College - Ouderavond</p>
     </footer>
 
     <script>
-        // scroll effect voor header (werkt met header.scrolled uit jouw stylesheet)
         window.addEventListener("scroll", function() {
             const header = document.getElementById("main-header");
             if (window.scrollY > 50) header.classList.add("scrolled");

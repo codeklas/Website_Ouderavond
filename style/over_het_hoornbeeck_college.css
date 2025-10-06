@@ -40,7 +40,6 @@ header.scrolled {
     height: 70px;
 }
 
-/* Navigatie */
 nav ul {
     list-style: none;
     display: flex;
@@ -59,7 +58,6 @@ nav ul li a.active {
     color: #00a9a3;
 }
 
-/* Dropdown */
 .dropdown {
     position: relative;
 }
@@ -96,7 +94,6 @@ nav ul li a.active {
     margin-left: 5px;
 }
 
-/* Hero */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -115,7 +112,6 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
-/* Intro sectie */
 .intro {
     display: flex;
     align-items: center;
@@ -154,7 +150,6 @@ nav ul li a.active {
     border-radius: 10px;
 }
 
-/* Waarom sectie */
 .why-ict {
     background: #ffffff;
     padding: 60px 10%;
@@ -184,7 +179,6 @@ nav ul li a.active {
     color: #084887;
 }
 
-/* Timeline sectie */
 .timeline {
     background: #f9f9f9;
     padding: 60px 10%;
@@ -214,33 +208,10 @@ nav ul li a.active {
     color: #f5ba36;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 15px 5%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .intro {
-        flex-direction: column;
-        padding: 40px 5%;
-    }
-
-    .intro-image img {
-        max-width: 90%;
-    }
 }

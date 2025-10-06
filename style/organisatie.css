@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header en navigatie */
 header {
     display: flex;
     justify-content: space-between;
@@ -58,7 +57,6 @@ nav ul li a.active {
     color: #00a9a3;
 }
 
-/* Dropdown */
 .dropdown {
     position: relative;
 }
@@ -95,7 +93,6 @@ nav ul li a.active {
     margin-left: 5px;
 }
 
-/* Hero sectie */
 .hero {
     background: linear-gradient(rgba(0,169,163,0.8), rgba(0,169,163,0.8)), url("image/hero_organisatie.jpg") no-repeat center center/cover;
     text-align: center;
@@ -114,7 +111,6 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
-/* Intro sectie */
 .intro {
     display: flex;
     align-items: center;
@@ -153,7 +149,6 @@ nav ul li a.active {
     border-radius: 10px;
 }
 
-/* Structuur sectie */
 .structure {
     background: #ffffff;
     padding: 60px 10%;
@@ -183,7 +178,6 @@ nav ul li a.active {
     color: #084887;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
