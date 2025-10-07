@@ -39,19 +39,16 @@
         </div>
     </section>
 
-    <div class="plattengrond_begane_grond">
-        <img src="image/plattegrond_begane_grond.png" alt="plattengrond">
+    <div class="slideshow-container">
+        <img src="image/plattegrond_begane_grond.png" alt="Begane grond" class="slide active">
+        <img src="image/plattegrond_eerste_verdieping.png" alt="Eerste verdieping" class="slide">
+        <img src="image/plattegrond_tweede_verdieping.png" alt="Tweede verdieping" class="slide">
+
+        <button class="prev" onclick="changeSlide(-1)">&#10094; Vorige</button>
+        <button class="next" onclick="changeSlide(1)">Volgende &#10095;</button>
     </div>
 
-    <div class="plattengrond_eerste_verdieping">
-        <img src="image/plattegrond_eerste_verdieping.png" alt="plattengrond">
-    </div>
-
-    <div class="plattengrond_tweede_verdieping">
-        <img src="image/plattegrond_tweede_verdieping.png" alt="plattengrond">
-    </div>
-
-        <footer>
+    <footer>
         <p>&copy; Hoornbeeck College, Willem Hendrik Zwartallee 1, 8265 TZ Kampen. Alle rechten voorbehouden.</p>
     </footer>
 
@@ -64,6 +61,21 @@
                 header.classList.remove("scrolled");
             }
         });
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[index].classList.add("active");
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            showSlide(currentSlide);
+        }
     </script>
 </body>
 </html>
