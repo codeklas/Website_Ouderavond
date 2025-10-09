@@ -207,6 +207,11 @@ nav ul li a.active {
     color: #084887;
 }
 
+.website-mede-studenten {
+    background: #ffffff;
+    padding: 60px 10%;
+}
+
 footer {
     background: #f5ba36;
     color: #fff;
