@@ -149,24 +149,24 @@ nav ul li a.active {
     border-radius: 15px;
 }
 
-.why-ict {
+.persoonlijk-over-ict {
     background: #ffffff;
     padding: 60px 10%;
 }
 
-.why-ict h2 {
+.persoonlijk-over-ict h2 {
     text-align: center;
     margin-bottom: 40px;
     color: #00a9a3;
 }
 
-.reasons {
+.antwoorden {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.reason {
+.antwoord {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
@@ -174,7 +174,7 @@ nav ul li a.active {
     border-top: 5px solid #f5ba36;
 }
 
-.reason h3 {
+.antwoord h3 {
     color: #084887;
 }
 
