@@ -6,9 +6,10 @@
 
 body {
     font-family: "Marselis Pro", Calibri, Arial, sans-serif;
-    background-color: #ffffff;
     color: #333;
+    background-color: #ffffff;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -16,45 +17,40 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     border-bottom: 2px solid #00a9a3;
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: backdrop-filter 0.3s ease, background 0.3s ease;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 header.scrolled {
     background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    backdrop-filter: blur(8px);
 }
 
 .logo {
-    height: 70px;
+    height: 65px;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    list-style: none;
+    gap: 25px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
     color: #00a9a3;
+    transform: translateY(-2px);
 }
 
 .dropdown {
@@ -64,77 +60,92 @@ nav ul li a.active {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
-    width: 200px;
-    background-color: #ffffff;
-    border-top: 3px solid #00a9a3;
-    padding: 10px 0;
-    text-align: left;
+    background-color: #fff;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
     z-index: 999;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f0f0f0;
+    color: #00a9a3;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content li {
-    padding: 8px 20px;
-}
-
-.dropdown-content li a {
-    color: #333;
-    font-weight: normal;
-}
-
-.dropdown > a::after {
-    content: "▼";
-    font-size: 0.7em;
-    margin-left: 5px;
-}
-
 .hero {
-    text-align: center;
-    padding: 120px 20px;
+    background: linear-gradient(rgba(0, 169, 163, 0.75), rgba(0, 169, 163, 0.75)),
+                url("../image/sfeer_hero.jpg") center/cover no-repeat;
     color: #fff;
-    background: linear-gradient(rgba(0,169,163,0.8), rgba(0,169,163,0.8)), url("../image/sfeer_hero.jpg") no-repeat center center/cover;
+    text-align: center;
+    padding: 140px 20px;
 }
 
-.hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 60px 10%;
-    background: #f9f9f9;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 70px 10%;
+    background-color: #f9f9f9;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.image-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.image-card img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
+
+.image-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.image-card:hover img {
+    transform: scale(1.03);
+}
+
 
 footer {
-    background: #f5ba36;
+    background-color: #f5ba36;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 25px 10px;
+    font-size: 0.95rem;
 }
