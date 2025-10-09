@@ -60,30 +60,33 @@ nav ul li a.active {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 0;
-    background-color: #fff;
-    width: 220px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    width: 200px;
+    background-color: #ffffff;
+    border-top: 3px solid #00a9a3;
+    padding: 10px 0;
+    text-align: left;
     z-index: 999;
-}
-
-.dropdown-content li a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    transition: background 0.3s ease;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f0f0f0;
-    color: #00a9a3;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown-content li {
+    padding: 8px 20px;
+}
+
+.dropdown-content li a {
+    color: #333;
+    font-weight: normal;
+}
+
+.dropdown > a::after {
+    content: "▼";
+    font-size: 0.7em;
+    margin-left: 5px;
 }
 
 .hero {
