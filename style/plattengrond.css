@@ -152,11 +152,11 @@ button.next:hover {
 }
 
 button.prev {
-    left: -100px; /* schuifknop iets naar links */
+    left: -100px;
 }
 
 button.next {
-    right: -240px; /* schuifknop iets naar rechts */
+    right: -240px;
 }
 
 footer {
@@ -164,8 +164,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
